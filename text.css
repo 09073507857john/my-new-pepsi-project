@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    /* text-decoration: none; */
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+.sec{
+    position: relative;
+}
+
+.logoimg{
+    height: 50px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.navbar-toggler{
+    background-color:black ;
+    font-size: 25px;
+}
+
+.nav-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    margin: auto;
+    height: 3px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.nav-link:hover::after{
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (max-width:768px){
+.navbar-dark .navbar-nav .nav-link{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.nav-item{
+    padding: 15px 0;
+}
+
+.d-flex{
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.gap{
+    gap: 0rem;
+}
+
+.image-col{
+    margin-top: 20px;
+}
+
+.text-box h1{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.text-box span{
+    padding: 0 5px;
+    font-size: 5rem;
+}
+
+.text-box p{
+    padding: 0 5px;
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+
+.thumbnails {
+    top: 100%;
+}
+}
+/* end of media query */
+
+.pepsimage{
+    height: 450px;
+    cursor: pointer;
+}
+
+.text-box span{
+    display: block;
+    padding: 0 15px;
+    font-weight: bolder;
+}
+
+.text-box h1{
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.text-box p{
+    padding: 0 16px;
+    color: white;
+    line-height: 1.5;
+}
+
+.button a{
+    border: 1 px solid white;
+    border-radius: 10px;   
+    background-color: white;
+    padding: 0.9rem 0.9rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.button a:hover{
+    background-color: black;
+    color: white;
+}
+
+.button{
+padding: 12px 10px;
+}
+
+.thumbnails{
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.thumbnails li{
+    margin: 0 20px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+    list-style: none;
+}
+
+.thumbnails li:hover{
+    transform:translateY(-50%);
+}
+
+.thumbnails img{
+    height: 40px;
+}
+
